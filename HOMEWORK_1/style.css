@@ -21,7 +21,7 @@ body {
 
 .header {
   min-height: 75px;
-  background: #222222;
+  background: #222224;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -64,7 +64,7 @@ path {
 }
 
 .upper__text {
-  color: #222;
+  color: #222224;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -73,7 +73,7 @@ path {
 }
 
 .bottom__text {
-  color: #222;
+  color: #222224;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -142,7 +142,7 @@ path {
 }
 
 .featured__title {
-  color: #222;
+  color: #222224;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;

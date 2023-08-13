@@ -1,3 +1,5 @@
+@import 'vars';
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body {
 
 .header {
     min-height: 75px;
-    background: #222222;
+    background: $mainDarkColor;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,7 +51,7 @@ path {
 }
 
 .header__icon:hover path {
-    fill: #F16D7F;
+    fill: $mainSelectColor;
 }
 
 .top {
@@ -59,12 +61,12 @@ path {
 }
 
 .top__info {
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $mainSelectColor;
     padding-left: 16px;
 }
 
 .upper__text {
-    color: #222;
+    color: $mainDarkColor;
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
@@ -73,7 +75,7 @@ path {
 }
 
 .bottom__text {
-    color: #222;
+    color: $mainDarkColor;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -82,7 +84,7 @@ path {
 }
 
 .text__oc {
-    color: #F16D7F;
+    color: $mainSelectColor;
 }
 
 .specity {
@@ -134,7 +136,7 @@ path {
 }
 
 .specity__title {
-    color: #F16D7F;
+    color: $mainSelectColor;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -143,7 +145,7 @@ path {
 }
 
 .featured__title {
-    color: #222;
+    color: $mainDarkColor;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -216,7 +218,7 @@ path {
 }
 
 .feature__add:hover svg path {
-    fill: #F16D7F;
+    fill: $mainSelectColor;
 }
 
 .item__title {
@@ -236,7 +238,7 @@ path {
 }
 
 .item__price {
-    color: #F16D7F;
+    color: $mainSelectColor;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -249,11 +251,11 @@ path {
 }
 
 .button__browse {
-    border-color: #F26376;
+    border-color: $buttonColor;
     padding: 15px 39px;
     border-style: solid;
     border-width: 1px;
-    color: #F26376;
+    color: $buttonColor;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -264,11 +266,11 @@ path {
 
 .button__browse:hover {
     color: #FFF;
-    background-color: #F26376;
+    background-color: $buttonColor;
 }
 
 .info {
-    background-color: #222224;
+    background-color: $mainDarkColor;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -328,7 +330,7 @@ path {
 
 .subscribe__text {
     max-width: 360px;
-    color: #222224;
+    color: $mainDarkColor;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -341,7 +343,7 @@ path {
 }
 
 .subscribe__title {
-    color: #222224;
+    color: $mainDarkColor;
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -350,7 +352,7 @@ path {
 }
 
 .subscribe__subtitle {
-    color: #222224;
+    color: $mainDarkColor;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -396,7 +398,7 @@ path {
 }
 
 .footer {
-    background-color: #222224;
+    background-color: $mainDarkColor;
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
@@ -427,7 +429,7 @@ path {
 }
 
 .social__icon:hover {
-    background-color: #F16D7F;
+    background-color: $mainSelectColor;
 }
 
 .social__icon:hover path {
