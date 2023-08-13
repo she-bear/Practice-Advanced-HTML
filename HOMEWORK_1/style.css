@@ -394,21 +394,18 @@ path {
   display: flex;
   justify-content: space-between;
 }
-
-.copyright__text {
+.footer__copyright__text {
   color: #FBFBFB;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-.social {
+.footer__social {
   display: flex;
   gap: 8px;
 }
-
-.social__icon {
+.footer__social__icon {
   background-color: #FFF;
   width: 31px;
   height: 32px;
@@ -417,12 +414,10 @@ path {
   align-items: center;
   transition: all 0.3s;
 }
-
-.social__icon:hover {
+.footer__social__icon:hover {
   background-color: #F16D7F;
 }
-
-.social__icon:hover path {
+.footer__social__icon:hover path {
   fill: #FFF;
 }
 

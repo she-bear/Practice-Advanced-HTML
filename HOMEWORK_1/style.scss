@@ -406,38 +406,40 @@ path {
     padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
+
+    &__copyright__text {
+        color: #FBFBFB;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__social {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__social__icon {
+        background-color: #FFF;
+        width: 31px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    &__social__icon:hover {
+        background-color: $mainSelectColor;
+    }
+
+    &__social__icon:hover path {
+        fill: #FFF;
+    }
 }
 
-.copyright__text {
-    color: #FBFBFB;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
-.social {
-    display: flex;
-    gap: 8px;
-}
-
-.social__icon {
-    background-color: #FFF;
-    width: 31px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-}
-
-.social__icon:hover {
-    background-color: $mainSelectColor;
-}
-
-.social__icon:hover path {
-    fill: #FFF;
-}
 
 
 /* Стили для мобильной версии */
