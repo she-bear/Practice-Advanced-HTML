@@ -60,30 +60,31 @@ path {
     background: #F1E4E6;
     display: flex;
     align-items: center;
+
+    &__info {
+        border-left: 12px solid $mainSelectColor;
+        padding-left: 16px;
+    }
+
+    &__upper__text {
+        color: $mainDarkColor;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__bottom__text {
+        color: $mainDarkColor;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 }
 
-.top__info {
-    border-left: 12px solid $mainSelectColor;
-    padding-left: 16px;
-}
-
-.upper__text {
-    color: $mainDarkColor;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.bottom__text {
-    color: $mainDarkColor;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-}
 
 .text__oc {
     color: $mainSelectColor;
@@ -463,18 +464,18 @@ path {
         display: flex;
         justify-content: center;
         padding: 148px 56px;
-    }
 
-    .top__image {
-        display: none;
-    }
+        &__image {
+            display: none;
+        }
 
-    .upper__text {
-        font-size: 38px;
-    }
+        &__upper__text {
+            font-size: 38px;
+        }
 
-    .bottom__text {
-        font-size: 20px;
+        &__bottom__text {
+            font-size: 20px;
+        }
     }
 
     .specity {
@@ -562,16 +563,18 @@ path {
         padding-right: 16px;
     }
 
-    .top__image {
-        width: 50%;
-    }
+    .top {
+        &__image {
+            width: 50%;
+        }
 
-    .upper__text {
-        font-size: 44px;
-    }
+        &__upper__text {
+            font-size: 44px;
+        }
 
-    .bottom__text {
-        font-size: 24px;
+        &__bottom__text {
+            font-size: 24px;
+        }
     }
 
     .specity {

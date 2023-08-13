@@ -53,13 +53,11 @@ path {
   display: flex;
   align-items: center;
 }
-
 .top__info {
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
 }
-
-.upper__text {
+.top__upper__text {
   color: #222224;
   font-size: 48px;
   font-style: normal;
@@ -67,8 +65,7 @@ path {
   line-height: normal;
   text-transform: uppercase;
 }
-
-.bottom__text {
+.top__bottom__text {
   color: #222224;
   font-size: 32px;
   font-style: normal;
@@ -453,10 +450,10 @@ path {
   .top__image {
     display: none;
   }
-  .upper__text {
+  .top__upper__text {
     font-size: 38px;
   }
-  .bottom__text {
+  .top__bottom__text {
     font-size: 20px;
   }
   .specity {
@@ -532,10 +529,10 @@ path {
   .top__image {
     width: 50%;
   }
-  .upper__text {
+  .top__upper__text {
     font-size: 44px;
   }
-  .bottom__text {
+  .top__bottom__text {
     font-size: 24px;
   }
   .specity {
