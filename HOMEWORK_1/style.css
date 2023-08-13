@@ -27,29 +27,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .header__left {
   display: flex;
   align-items: center;
   gap: 41px;
 }
-
 .header__right {
   display: flex;
   align-items: center;
   gap: 33px;
 }
-
 .header__rightMobile {
   display: none;
+}
+.header__icon:hover path {
+  fill: #F16D7F;
 }
 
 path {
   transition: fill 0.3s ease;
-}
-
-.header__icon:hover path {
-  fill: #F16D7F;
 }
 
 .top {

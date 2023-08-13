@@ -28,31 +28,33 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+
+    &__rightMobile {
+        display: none;
+    }
+
+    &__icon:hover path {
+        fill: $mainSelectColor;
+    }
 }
 
-.header__left {
-    display: flex;
-    align-items: center;
-    gap: 41px;
-}
-
-.header__right {
-    display: flex;
-    align-items: center;
-    gap: 33px;
-}
-
-.header__rightMobile {
-    display: none;
-}
 
 path {
     transition: fill .3s ease;
 }
 
-.header__icon:hover path {
-    fill: $mainSelectColor;
-}
 
 .top {
     background: #F1E4E6;
