@@ -147,106 +147,109 @@ path {
     text-transform: uppercase;
 }
 
-.featured__title {
-    color: $mainDarkColor;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    margin-bottom: 6px;
+.featured {
+    &__title {
+        color: $mainDarkColor;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        color: #9F9F9F;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        background: #F8F8F8;
+        position: relative;
+    }
+
+    &__img {
+        transition: all 0.4s;
+    }
+
+    &__item:hover &__img {
+        filter: brightness(0.5);
+    }
+
+    &__item:hover &__add {
+        display: flex;
+    }
+
+    &__item__content {
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__add {
+        position: absolute;
+        top: 188px;
+        left: 111px;
+        border: 1px solid #fff;
+        width: 139px;
+        height: 44px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        color: #FFFFFF;
+    }
+
+    &__add:hover {
+        box-shadow: 0 0 5px #fff;
+    }
+
+    &__add:hover svg path {
+        fill: $mainSelectColor;
+    }
+
+    &__item__title {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__item__text {
+        color: #5D5D5D;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__item__price {
+        color: $mainSelectColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
-.featured__text {
-    color: #9F9F9F;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-}
-
-.featured__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-
-.feature__item {
-    background: #F8F8F8;
-    position: relative;
-}
-
-.featured__img {
-    transition: all 0.4s;
-}
-
-.feature__item:hover .featured__img {
-    filter: brightness(0.5);
-}
-
-.feature__item:hover .feature__add {
-    display: flex;
-}
-
-.feature__item__content {
-    padding: 24px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.feature__add {
-    position: absolute;
-    top: 188px;
-    left: 111px;
-    border: 1px solid #fff;
-    width: 139px;
-    height: 44px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    color: #FFFFFF;
-}
-
-.feature__add:hover {
-    box-shadow: 0 0 5px #fff;
-}
-
-.feature__add:hover svg path {
-    fill: $mainSelectColor;
-}
-
-.item__title {
-    color: #000;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.item__text {
-    color: #5D5D5D;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.item__price {
-    color: $mainSelectColor;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .browse {
     margin-bottom: 60px;
