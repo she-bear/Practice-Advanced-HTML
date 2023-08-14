@@ -310,14 +310,12 @@ path {
   align-items: center;
   text-align: center;
 }
-
 .subscribe__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 .subscribe__text {
   max-width: 360px;
   color: #222224;
@@ -327,11 +325,9 @@ path {
   font-weight: 400;
   line-height: normal;
 }
-
 .subscribe__italic {
   font-style: italic;
 }
-
 .subscribe__title {
   color: #222224;
   text-align: center;
@@ -340,7 +336,6 @@ path {
   font-weight: 700;
   line-height: 167.2%;
 }
-
 .subscribe__subtitle {
   color: #222224;
   font-size: 18px;
@@ -348,12 +343,10 @@ path {
   font-weight: 400;
   line-height: 167.2%;
 }
-
-.form {
+.subscribe__form {
   display: flex;
   flex-direction: row;
 }
-
 .subscribe__input {
   width: 250px;
   height: 49px;
@@ -363,11 +356,9 @@ path {
   padding-left: 22px;
   padding-right: 22px;
 }
-
 .subscribe__input:focus {
   background-color: #FFFFFF;
 }
-
 .subscribe__button {
   width: 100px;
   height: 49px;
@@ -382,7 +373,6 @@ path {
   line-height: normal;
   transition: transform 0.3s;
 }
-
 .subscribe__button:hover {
   transform: scale(1.05);
 }
