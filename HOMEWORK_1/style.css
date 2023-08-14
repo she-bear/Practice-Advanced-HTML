@@ -1,4 +1,28 @@
 @charset "UTF-8";
+.navigation {
+  background-color: #F8F3F4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.navigation__title {
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navigation__link {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.navigation__link_site {
+  color: #F16D7F;
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
