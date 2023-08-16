@@ -2,6 +2,9 @@
     background-color: #F8F3F4;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &__title {
         color: $mainSelectColor;
