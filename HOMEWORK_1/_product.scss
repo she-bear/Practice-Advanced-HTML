@@ -141,7 +141,8 @@
 
 
 .featured__product {
-    margin-top: 712px;
+    padding-top: 712px;
+    padding-bottom: 128px;
 
     &__title {
         color: $mainDarkColor;
