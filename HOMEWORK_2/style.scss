@@ -15,7 +15,10 @@ a {
 
 body {
     font-family: 'Lato', sans-serif;
-    ;
+}
+
+.page__content {
+    overflow: hidden;
 }
 
 .center {
@@ -30,6 +33,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 
     &__left {
         display: flex;
@@ -49,6 +53,69 @@ body {
 
     &__icon:hover path {
         fill: $mainSelectColor;
+    }
+}
+
+// спрятать за экран
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.side__menu {
+        right: -$widthBurgerMenu;
+    }
+}
+
+// при адаптиве мобильной версии нужно будет растянуть на весь экран
+.side__menu {
+    background: #FFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: $widthBurgerMenu;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 75px;
+    // прижат к правой границе
+    right: 0;
+    transition: right .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+        color: $mainSelectColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        // padding-bottom: 12px;
+    }
+
+    &__main {
+        color: #000;
+        font-weight: 700;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-left: 20px;
+    }
+
+    &__item {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
 
