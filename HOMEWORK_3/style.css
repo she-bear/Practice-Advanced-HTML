@@ -21,6 +21,11 @@
   font-weight: 300;
   line-height: normal;
 }
+.navigation__link:not(:last-child)::after {
+  content: "/";
+  padding-right: 8px;
+  padding-left: 8px;
+}
 .navigation__link_site {
   color: #F16D7F;
   font-weight: 700;
