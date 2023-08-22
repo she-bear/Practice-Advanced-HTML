@@ -381,6 +381,60 @@ summary::-webkit-details-marker {
   color: #F16D7F;
 }
 
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+.cart__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart__item {
+  height: 306px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+.cart__item__content {
+  padding-top: 22px;
+  padding-right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.cart__item__title {
+  display: flex;
+  align-items: baseline;
+  gap: 57px;
+  justify-content: space-between;
+}
+.cart__item__header {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 55%;
+}
+.cart__item__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cart__item__field {
+  color: #575757;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart__img {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -517,6 +571,10 @@ path {
 
 .text__oc {
   color: #F16D7F;
+}
+
+.text__par {
+  color: #6F6E6E;
 }
 
 .specity {

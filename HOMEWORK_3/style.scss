@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'product';
 @import 'catalog';
+@import 'cart';
 
 * {
     margin: 0;
@@ -157,6 +158,10 @@ path {
 
 .text__oc {
     color: $mainSelectColor;
+}
+
+.text__par {
+    color: #6F6E6E;
 }
 
 .specity {
