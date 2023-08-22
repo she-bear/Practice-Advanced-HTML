@@ -437,7 +437,7 @@ body {
   visibility: hidden;
 }
 #burger:checked ~ .side__menu {
-  right: -232px;
+  right: 0;
 }
 
 .side__menu {
@@ -448,11 +448,12 @@ body {
   box-sizing: border-box;
   position: absolute;
   top: 75px;
-  right: 0;
+  right: -232px;
   transition: right 0.3s;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 12;
 }
 .side__menu__title {
   color: #F16D7F;

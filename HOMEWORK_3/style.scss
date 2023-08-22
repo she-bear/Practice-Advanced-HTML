@@ -63,7 +63,7 @@ body {
     visibility: hidden;
 
     &:checked~.side__menu {
-        right: -$widthBurgerMenu;
+        right: 0;
     }
 }
 
@@ -77,11 +77,12 @@ body {
     position: absolute;
     top: 75px;
     // прижат к правой границе
-    right: 0;
+    right: -$widthBurgerMenu;
     transition: right .3s;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    z-index: 12;
 
     &__title {
         color: $mainSelectColor;
@@ -89,7 +90,6 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        // padding-bottom: 12px;
     }
 
     &__main {
