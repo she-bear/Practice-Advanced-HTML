@@ -100,6 +100,15 @@
             height: 45px;
             border: 1px solid #A4A4A4;
             box-sizing: border-box;
+            padding: 13px 16px;
+
+            &::placeholder {
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
         }
 
         &__button {
