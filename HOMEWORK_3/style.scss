@@ -87,11 +87,7 @@ body {
     z-index: 12;
 
     &__title {
-        color: $mainSelectColor;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainSelectColor, 14px, 400);
     }
 
     &__main {
@@ -113,11 +109,7 @@ body {
     }
 
     &__item {
-        color: #6F6E6E;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#6F6E6E, 14px, 400);
     }
 }
 
@@ -138,20 +130,12 @@ path {
     }
 
     &__upper__text {
-        color: $mainDarkColor;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
+        @include font($mainDarkColor, 48px, 900);
         text-transform: uppercase;
     }
 
     &__bottom__text {
-        color: $mainDarkColor;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include font($mainDarkColor, 32px, 700);
         text-transform: uppercase;
     }
 }
@@ -162,12 +146,7 @@ path {
 }
 
 .text__par {
-    color: #6F6E6E;
-    font-family: Lato;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include font(#6F6E6E, 22px, 400);
 }
 
 .specity {
@@ -209,41 +188,25 @@ path {
 }
 
 .specity__subtitle {
-    color: #FFF;
     text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include font(#FFFFFF, 16px, 400);
     text-transform: uppercase;
 }
 
 .specity__title {
-    color: $mainSelectColor;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @include font($mainSelectColor, 24px, 700);
     text-transform: uppercase;
 }
 
 .featured {
     &__title {
-        color: $mainDarkColor;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainDarkColor, 30px, 400);
         text-align: center;
         margin-bottom: 6px;
     }
 
     &__text {
-        color: #9F9F9F;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#9F9F9F, 14px, 400);
         text-align: center;
     }
 
@@ -286,15 +249,13 @@ path {
         border: 1px solid #fff;
         width: 139px;
         height: 44px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
+        @include font(#FFFFFF, 14px, 400);
         line-height: 17px;
+
         display: none;
         align-items: center;
         justify-content: center;
         gap: 11px;
-        color: #FFFFFF;
     }
 
     &__add:hover {
@@ -306,27 +267,15 @@ path {
     }
 
     &__item__title {
-        color: #000;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#000000, 13px, 400);
     }
 
     &__item__text {
-        color: #5D5D5D;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#5D5D5D, 14px, 300);
     }
 
     &__item__price {
-        color: $mainSelectColor;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainSelectColor, 16px, 400);
     }
 }
 
@@ -341,11 +290,7 @@ path {
     padding: 15px 39px;
     border-style: solid;
     border-width: 1px;
-    color: $buttonColor;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include font($buttonColor, 16px, 400);
     background-color: #FFF;
     transition: all 0.3s;
 }
@@ -379,21 +324,12 @@ path {
 }
 
 .info__subtitle {
-    color: #FBFBFB;
-    font-size: 19.96px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include font(#FBFBFB, 19.96px, 400);
     padding-bottom: 16px;
 }
 
 .info__text {
-    color: #FBFBFB;
-    text-align: center;
-    font-size: 13.972px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    @include font(#FBFBFB, 13.972px, 300);
 }
 
 .subscribe {
@@ -415,12 +351,8 @@ path {
 
     &__text {
         max-width: 360px;
-        color: $mainDarkColor;
         text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainDarkColor, 20px, 400);
     }
 
     &__italic {
@@ -428,19 +360,13 @@ path {
     }
 
     &__title {
-        color: $mainDarkColor;
         text-align: center;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
+        @include font($mainDarkColor, 24px, 700);
         line-height: 167.2%;
     }
 
     &__subtitle {
-        color: $mainDarkColor;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
+        @include font($mainDarkColor, 18px, 400);
         line-height: 167.2%;
     }
 
@@ -493,11 +419,7 @@ path {
     justify-content: space-between;
 
     &__copyright__text {
-        color: #FBFBFB;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#FBFBFB, 16px, 400);
     }
 
     &__social {

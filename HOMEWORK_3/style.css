@@ -720,7 +720,6 @@ path {
 
 .text__par {
   color: #6F6E6E;
-  font-family: Lato;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -765,8 +764,8 @@ path {
 }
 
 .specity__subtitle {
-  color: #FFF;
   text-align: center;
+  color: #FFFFFF;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -833,15 +832,16 @@ path {
   border: 1px solid #fff;
   width: 139px;
   height: 44px;
+  color: #FFFFFF;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  line-height: normal;
   line-height: 17px;
   display: none;
   align-items: center;
   justify-content: center;
   gap: 11px;
-  color: #FFFFFF;
 }
 .featured__add:hover {
   box-shadow: 0 0 5px #fff;
@@ -850,7 +850,7 @@ path {
   fill: #F16D7F;
 }
 .featured__item__title {
-  color: #000;
+  color: #000000;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -929,7 +929,6 @@ path {
 
 .info__text {
   color: #FBFBFB;
-  text-align: center;
   font-size: 13.972px;
   font-style: normal;
   font-weight: 300;
@@ -954,8 +953,8 @@ path {
 }
 .subscribe__text {
   max-width: 360px;
-  color: #222222;
   text-align: center;
+  color: #222222;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -965,11 +964,12 @@ path {
   font-style: italic;
 }
 .subscribe__title {
-  color: #222222;
   text-align: center;
+  color: #222222;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
   line-height: 167.2%;
 }
 .subscribe__subtitle {
@@ -977,6 +977,7 @@ path {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
   line-height: 167.2%;
 }
 .subscribe__form {
