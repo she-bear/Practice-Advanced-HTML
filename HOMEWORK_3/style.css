@@ -442,6 +442,23 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
+.cart__item__quantity {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+.cart__item__count {
+  width: 44px;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+  padding-right: 16px;
+  padding-left: 17px;
+  color: #656565;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .cart__actions {
   display: flex;
   justify-content: space-between;
