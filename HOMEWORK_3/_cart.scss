@@ -46,11 +46,7 @@
         }
 
         &__header {
-            color: #222;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            @include font($mainDarkColor, 24px, 400);
             width: 55%;
         }
 
@@ -61,11 +57,7 @@
         }
 
         &__field {
-            color: #575757;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            @include font(#575757, 22px, 400);
         }
     }
 
@@ -78,11 +70,7 @@
             padding: 16px 40px;
             border-style: solid;
             border-width: 1px;
-            color: #4A4A4A;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include font(#4A4A4A, 14px, 300);
             background-color: #FFF;
             transition: all 0.3s;
 
@@ -101,11 +89,7 @@
         padding-top: 18px;
 
         &__title {
-            color: #222;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include font($mainDarkColor, 16px, 300);
         }
 
         &__field {
@@ -116,11 +100,7 @@
             padding: 13px 16px;
 
             &::placeholder {
-                color: #B1B1B1;
-                font-size: 13px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
+                @include font(#B1B1B1, 13px, 300);
             }
 
             &:focus {
@@ -134,11 +114,7 @@
             padding: 12px 14px;
             border-style: solid;
             border-width: 1px;
-            color: #4A4A4A;
-            font-size: 11px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include font (#4A4A4A, 11px, 300);
             background-color: #FFF;
             transition: all 0.3s;
 
@@ -167,21 +143,13 @@
         gap: 12px;
 
         &__subtitle {
-            color: #4A4A4A;
-            font-size: 11px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            @include font(#4A4A4A, 11px, 400);
             display: flex;
             gap: 20px;
         }
 
         &__title {
-            color: #222;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include font($mainDarkColor, 16px, 300);
             display: flex;
             gap: 20px;
         }
@@ -203,11 +171,8 @@
             padding: 16px 42px;
             border-style: solid;
             border-width: 1px;
-            color: #FFF;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include font(#FFFFFF, 16px, 300);
+
             background-color: $mainSelectColor;
             transition: all 0.3s;
 
