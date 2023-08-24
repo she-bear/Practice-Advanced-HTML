@@ -28,8 +28,7 @@
         padding-left: 8px;
     }
 
-
-    &__link_site {
+    &__link:last-child {
         color: $mainSelectColor;
         font-weight: 700;
     }
