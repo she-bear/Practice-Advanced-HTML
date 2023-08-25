@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins.scss';
 @import 'header';
+@import 'info';
 @import 'product';
 @import 'catalog';
 @import 'cart';
@@ -213,38 +214,6 @@ path {
 .button__browse:hover {
     color: #FFF;
     background-color: $buttonColor;
-}
-
-.info {
-    background-color: $mainDarkColor;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding-top: 104px;
-    padding-bottom: 104px;
-}
-
-.info__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info__link {
-    padding-bottom: 25px;
-}
-
-.info__link:hover {
-    cursor: default;
-}
-
-.info__subtitle {
-    @include font(#FBFBFB, 19.96px, 400);
-    padding-bottom: 16px;
-}
-
-.info__text {
-    @include font(#FBFBFB, 13.972px, 300);
 }
 
 .subscribe {

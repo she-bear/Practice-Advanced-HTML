@@ -1,0 +1,31 @@
+.info {
+    background-color: $mainDarkColor;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link {
+        padding-bottom: 25px;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    &__subtitle {
+        @include font(#FBFBFB, 19.96px, 400);
+        padding-bottom: 16px;
+    }
+
+    &__text {
+        @include font(#FBFBFB, 13.972px, 300);
+    }
+}
