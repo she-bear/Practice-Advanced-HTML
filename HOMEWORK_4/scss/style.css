@@ -1,4 +1,87 @@
 @charset "UTF-8";
+.header {
+  min-height: 75px;
+  background: #222222;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.header__rightMobile {
+  display: none;
+}
+.header__icon:hover path {
+  fill: #F16D7F;
+}
+
+#burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+#burger:checked ~ .side__menu {
+  right: 0;
+}
+
+.side__menu {
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 75px;
+  right: -232px;
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 12;
+}
+.side__menu__title {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.side__menu__main {
+  color: #000;
+  font-weight: 700;
+}
+.side__menu__section {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.side__menu__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding-left: 20px;
+}
+.side__menu__item {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.side__menu__item:hover {
+  color: #F16D7F;
+}
+
 .navigation {
   background-color: #F8F3F4;
   padding-top: 60px;
@@ -621,89 +704,6 @@ body {
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
-}
-
-.header {
-  min-height: 75px;
-  background: #222222;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-.header__left {
-  display: flex;
-  align-items: center;
-  gap: 41px;
-}
-.header__right {
-  display: flex;
-  align-items: center;
-  gap: 33px;
-}
-.header__rightMobile {
-  display: none;
-}
-.header__icon:hover path {
-  fill: #F16D7F;
-}
-
-#burger {
-  position: absolute;
-  left: -999999px;
-  visibility: hidden;
-}
-#burger:checked ~ .side__menu {
-  right: 0;
-}
-
-.side__menu {
-  background: #FFF;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  width: 232px;
-  padding: 32px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 75px;
-  right: -232px;
-  transition: right 0.3s;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  z-index: 12;
-}
-.side__menu__title {
-  color: #F16D7F;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.side__menu__main {
-  color: #000;
-  font-weight: 700;
-}
-.side__menu__section {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-.side__menu__subtitle {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  padding-left: 20px;
-}
-.side__menu__item {
-  color: #6F6E6E;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.side__menu__item:hover {
-  color: #F16D7F;
 }
 
 path {
