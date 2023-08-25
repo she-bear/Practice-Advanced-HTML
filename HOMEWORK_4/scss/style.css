@@ -834,6 +834,8 @@ summary::-webkit-details-marker {
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
 }
 .registration__left {
   display: flex;
@@ -892,7 +894,7 @@ summary::-webkit-details-marker {
   margin-left: 10px;
   margin-right: 20px;
 }
-.registration__text {
+.registration__note {
   margin-top: 15px;
   margin-bottom: 39px;
   color: #B1B1B1;
@@ -921,6 +923,33 @@ summary::-webkit-details-marker {
   transform: scale(1.025);
   color: #F16D7F;
   background-color: #FFF;
+}
+.registration__button:hover path {
+  fill: #F16D7F;
+}
+.registration__right, .registration__right h3 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.registration__ul {
+  list-style-position: inside;
+}
+.registration__ul li {
+  margin-bottom: 16px;
+  list-style-image: url(../img/marker.svg);
+}
+.registration__ul li::before {
+  content: " ";
+}
+.registration__ul li span {
+  position: relative;
+  left: 24px;
 }
 
 * {
