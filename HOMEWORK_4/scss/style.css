@@ -196,6 +196,40 @@
   transform: scale(1.05);
 }
 
+.footer {
+  background-color: #222222;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright__text {
+  color: #FBFBFB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__social {
+  display: flex;
+  gap: 8px;
+}
+.footer__social__icon {
+  background-color: #FFF;
+  width: 31px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.footer__social__icon:hover {
+  background-color: #F16D7F;
+}
+.footer__social__icon:hover path {
+  fill: #FFF;
+}
+
 .navigation {
   background-color: #F8F3F4;
   padding-top: 60px;
@@ -1029,40 +1063,6 @@ path {
 .button__browse:hover {
   color: #FFF;
   background-color: #F26376;
-}
-
-.footer {
-  background-color: #222222;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer__copyright__text {
-  color: #FBFBFB;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.footer__social {
-  display: flex;
-  gap: 8px;
-}
-.footer__social__icon {
-  background-color: #FFF;
-  width: 31px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s;
-}
-.footer__social__icon:hover {
-  background-color: #F16D7F;
-}
-.footer__social__icon:hover path {
-  fill: #FFF;
 }
 
 /* Стили для мобильной версии */

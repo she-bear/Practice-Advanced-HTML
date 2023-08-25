@@ -1,0 +1,34 @@
+.footer {
+    background-color: $mainDarkColor;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    &__copyright__text {
+        @include font(#FBFBFB, 16px, 400);
+    }
+
+    &__social {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__social__icon {
+        background-color: #FFF;
+        width: 31px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    &__social__icon:hover {
+        background-color: $mainSelectColor;
+    }
+
+    &__social__icon:hover path {
+        fill: #FFF;
+    }
+}
