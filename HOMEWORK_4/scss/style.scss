@@ -58,7 +58,6 @@ path {
     }
 }
 
-
 .text__oc {
     color: $mainSelectColor;
 }
@@ -211,11 +210,11 @@ path {
     @include font($buttonColor, 16px, 400);
     background-color: #FFF;
     transition: all 0.3s;
-}
 
-.button__browse:hover {
-    color: #FFF;
-    background-color: $buttonColor;
+    &:hover {
+        color: #FFF;
+        background-color: $buttonColor;
+    }
 }
 
 
@@ -228,16 +227,17 @@ path {
 
     .header {
         padding: 0 16px;
+
+        &__right {
+            display: none;
+        }
+
+        &__rightMobile {
+            display: flex;
+            align-items: center;
+        }
     }
 
-    .header__right {
-        display: none;
-    }
-
-    .header__rightMobile {
-        display: flex;
-        align-items: center;
-    }
 
     .top {
         display: flex;
@@ -284,11 +284,11 @@ path {
         flex-direction: column;
         gap: 16px;
         margin: 64px 8px 40px 8px;
-    }
 
-    .feature__item,
-    .featured__img {
-        width: 100%;
+        &__item,
+        &__img {
+            width: 100%;
+        }
     }
 
     .info {
@@ -305,14 +305,14 @@ path {
         gap: 59px;
         padding-top: 64px;
         padding-bottom: 110px;
-    }
 
-    .subscribe__text {
-        font-size: 18px;
-    }
+        &__text {
+            font-size: 18px;
+        }
 
-    .subscribe__subtitle {
-        font-size: 14px;
+        &__subtitle {
+            font-size: 14px;
+        }
     }
 
     .footer {
@@ -334,12 +334,14 @@ path {
         padding-right: calc(50% - 368px);
     }
 
-    .header__left {
-        padding-left: 16px;
-    }
+    .header {
+        &__left {
+            padding-left: 16px;
+        }
 
-    .header__right {
-        padding-right: 16px;
+        &__right {
+            padding-right: 16px;
+        }
     }
 
     .top {

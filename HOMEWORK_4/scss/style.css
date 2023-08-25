@@ -115,6 +115,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: center;
 }
 
 .subscribe {
@@ -1052,7 +1053,6 @@ path {
   background-color: #FFF;
   transition: all 0.3s;
 }
-
 .button__browse:hover {
   color: #FFF;
   background-color: #F26376;
@@ -1112,8 +1112,7 @@ path {
     gap: 16px;
     margin: 64px 8px 40px 8px;
   }
-  .feature__item,
-  .featured__img {
+  .featured__content__item, .featured__content__img {
     width: 100%;
   }
   .info {
