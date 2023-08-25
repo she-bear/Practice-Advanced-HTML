@@ -337,7 +337,7 @@ path {
 }
 
 .subscribe {
-    background-image: url(img/subscribe_bg.png);
+    background-image: url(../img/subscribe_bg.png);
     background-size: cover;
     padding-top: 97px;
     padding-bottom: 126px;
@@ -534,7 +534,7 @@ path {
     }
 
     .subscribe {
-        background-image: url(img/subscribe_bg_mobile.png);
+        background-image: url(../img/subscribe_bg_mobile.png);
         grid-template-columns: 1fr;
         gap: 59px;
         padding-top: 64px;
@@ -623,7 +623,7 @@ path {
     }
 
     .subscribe {
-        background-image: url(img/subscribe_bg_laptop.png);
+        background-image: url(../img/subscribe_bg_laptop.png);
         grid-template-columns: 1fr;
         gap: 48px;
         padding-top: 64px;
