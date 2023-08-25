@@ -111,6 +111,10 @@ body {
     &__item {
         @include font(#6F6E6E, 14px, 400);
     }
+
+    &__item:hover {
+        color: #F16D7F;
+    }
 }
 
 

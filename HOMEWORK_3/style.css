@@ -702,6 +702,9 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.side__menu__item:hover {
+  color: #F16D7F;
+}
 
 path {
   transition: fill 0.3s ease;
