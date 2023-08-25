@@ -27,5 +27,6 @@
 
     &__text {
         @include font(#FBFBFB, 13.972px, 300);
+        text-align: center;
     }
 }
