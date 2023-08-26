@@ -304,7 +304,6 @@
 }
 .product__info__text {
   color: #5E5E5E;
-  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -314,7 +313,7 @@
   width: 555px;
 }
 .product__info__price {
-  color: #EF5B70;
+  color: #F16D7F;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -413,15 +412,15 @@
   border: 1px solid #fff;
   width: 139px;
   height: 44px;
+  color: #FFFFFF;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 17px;
   display: none;
   align-items: center;
   justify-content: center;
   gap: 11px;
-  color: #FFFFFF;
 }
 .featured__product__add:hover {
   box-shadow: 0 0 5px #fff;

@@ -7,19 +7,11 @@
     justify-content: space-between;
 
     &__title {
-        color: $mainSelectColor;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainSelectColor, 24px, 400);
     }
 
     &__link {
-        color: #636363;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#636363, 14px, 300);
     }
 
     &__link:not(:last-child)::after {
@@ -56,11 +48,7 @@
     }
 
     &__subtitle {
-        color: $mainSelectColor;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font($mainSelectColor, 14px, 300);
         margin-bottom: 27px;
     }
 
@@ -70,32 +58,19 @@
 
 
     &__title {
-        color: #4D4D4D;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#4D4D4D, 18px, 300);
         margin-bottom: 48px;
     }
 
     &__text {
-        color: #5E5E5E;
-        text-align: center;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#5E5E5E, 14px, 300);
         text-align: center;
         margin-bottom: 32px;
         width: 555px;
     }
 
     &__price {
-        color: #EF5B70;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font($mainSelectColor, 24px, 300);
         margin-bottom: 65px;
     }
 
@@ -121,11 +96,7 @@
         padding: 15px 39px;
         border-style: solid;
         border-width: 1px;
-        color: $buttonColor;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($buttonColor, 16px, 400);
         background-color: #FFF;
         transition: all 0.3s;
 
@@ -151,21 +122,13 @@
     padding-bottom: 128px;
 
     &__title {
-        color: $mainDarkColor;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainDarkColor, 30px, 400);
         text-align: center;
         margin-bottom: 6px;
     }
 
     &__text {
-        color: #9F9F9F;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#9F9F9F, 14px, 400);
         text-align: center;
     }
 
@@ -208,15 +171,11 @@
         border: 1px solid #fff;
         width: 139px;
         height: 44px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(#FFFFFF, 14px, 400, 17px);
         display: none;
         align-items: center;
         justify-content: center;
         gap: 11px;
-        color: #FFFFFF;
     }
 
     &__add:hover {
@@ -228,26 +187,14 @@
     }
 
     &__item__title {
-        color: #000;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#000, 13px, 400);
     }
 
     &__item__text {
-        color: #5D5D5D;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#5D5D5D, 14px, 300);
     }
 
     &__item__price {
-        color: $mainSelectColor;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font($mainSelectColor, 16px, 400);
     }
 }
