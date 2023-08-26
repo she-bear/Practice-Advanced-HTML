@@ -152,7 +152,6 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   line-height: 167.2%;
 }
 .subscribe__subtitle {
@@ -160,7 +159,6 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   line-height: 167.2%;
 }
 .subscribe__form {
@@ -186,7 +184,6 @@
   border: none;
   border-radius: 0 25px 25px 0;
   color: #FFF;
-  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
