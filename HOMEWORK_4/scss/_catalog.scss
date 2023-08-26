@@ -48,11 +48,7 @@ summary::-webkit-details-marker {
     }
 
     &__heading {
-        color: #000;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+        @include font (#000, 14px, 600);
 
         &:hover {
             cursor: pointer;
@@ -68,11 +64,7 @@ summary::-webkit-details-marker {
     }
 
     &__title {
-        color: #6F6E6E;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#6F6E6E, 14px, 400);
         padding: 8px 11px 11px 11px;
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid $mainSelectColor;
@@ -90,11 +82,7 @@ summary::-webkit-details-marker {
     }
 
     &__link {
-        color: #6F6E6E;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#6F6E6E, 14px, 400);
 
         &:hover {
             color: $mainSelectColor;
@@ -124,20 +112,12 @@ summary::-webkit-details-marker {
         gap: 9px;
         align-items: center;
 
-        color: #6F6E6E;
+        @include font(#6F6E6E, 14px, 400);
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     &__heading {
-        color: #6F6E6E;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font(#6F6E6E, 14px, 400);
     }
 
     &__box {
@@ -172,11 +152,7 @@ summary::-webkit-details-marker {
     gap: 18px;
 
     &__pages {
-        color: #C4C4C4;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include font(#C4C4C4, 16px, 300);
     }
 
     &__select {

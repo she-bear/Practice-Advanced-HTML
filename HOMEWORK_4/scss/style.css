@@ -560,11 +560,11 @@ summary::-webkit-details-marker {
   gap: 9px;
   align-items: center;
   color: #6F6E6E;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-family: "Roboto", sans-serif;
 }
 .sort__heading {
   color: #6F6E6E;
