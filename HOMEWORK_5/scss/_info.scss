@@ -29,4 +29,14 @@
         @include font(#FBFBFB, 13.972px, 300);
         text-align: center;
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        & {
+            display: grid;
+            grid-template-columns: 360px;
+            justify-content: center;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+    }
 }
