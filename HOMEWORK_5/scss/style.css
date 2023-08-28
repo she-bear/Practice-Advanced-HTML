@@ -210,6 +210,15 @@
 .subscribe__button:hover {
   transform: scale(1.05);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe {
+    background-image: url(../img/subscribe_bg_laptop.png);
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+}
 
 .footer {
   background-color: #222222;
@@ -1311,12 +1320,5 @@ path {
   }
   .browse {
     margin-bottom: 64px;
-  }
-  .subscribe {
-    background-image: url(../img/subscribe_bg_laptop.png);
-    grid-template-columns: 1fr;
-    gap: 48px;
-    padding-top: 64px;
-    padding-bottom: 140px;
   }
 }/*# sourceMappingURL=style.css.map */
