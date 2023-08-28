@@ -81,15 +81,15 @@
 .side__menu__item:hover {
   color: #F16D7F;
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
-  .header__left {
+  .side__menu__left {
     padding-left: 16px;
   }
-  .header__right {
+  .side__menu__right {
     padding-right: 16px;
   }
 }
+
 .info {
   background-color: #222222;
   display: grid;
@@ -124,6 +124,15 @@
   font-weight: 300;
   line-height: normal;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info {
+    display: grid;
+    grid-template-columns: 360px;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
 }
 
 .subscribe {
@@ -1302,13 +1311,6 @@ path {
   }
   .browse {
     margin-bottom: 64px;
-  }
-  .info {
-    display: grid;
-    grid-template-columns: 360px;
-    justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 64px;
   }
   .subscribe {
     background-image: url(../img/subscribe_bg_laptop.png);
