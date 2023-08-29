@@ -1,0 +1,131 @@
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    gap: 128px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        @include font(#222, 16px, 300);
+    }
+
+    &__field {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        box-sizing: border-box;
+        padding: 13px 16px;
+
+        &::placeholder {
+            @include font(#B1B1B1, 13px, 300);
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 3px 2px rgba(241, 109, 127, 0.2);
+        }
+    }
+
+    &__radio {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__radioitem {
+        vertical-align: middle;
+    }
+
+    &__label {
+        @include font(#000, 11px, 300);
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    &__note {
+        margin-top: 15px;
+        margin-bottom: 39px;
+        @include font(#B1B1B1, 13px, 300);
+    }
+
+    &__button {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        border-color: $mainSelectColor;
+        padding: 16px 30px;
+        border-style: solid;
+        border-width: 1px;
+        @include font(#FFFFFF, 14px, 400);
+
+        background-color: $mainSelectColor;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.025);
+            color: $mainSelectColor;
+            background-color: #FFF;
+
+            & path {
+                fill: $mainSelectColor;
+            }
+        }
+    }
+
+    &__right,
+    &__right h3 {
+        @include font(#000, 24px, 300);
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    &__ul {
+        list-style-position: inside;
+    }
+
+    &__ul li {
+        margin-bottom: 16px;
+
+        list-style-image: url(../img/marker.svg);
+
+        &::before {
+            content: " ";
+        }
+
+        & span {
+            position: relative;
+            left: 24px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .registration {
+        gap: 22px;
+        padding-top: 40px;
+
+        &__right,
+        &__right h3 {
+            font-size: 16px;
+        }
+
+        &__header {
+            margin-bottom: 10px;
+        }
+
+        &__ul {
+            list-style-position: outside;
+            margin-left: 22px;
+        }
+    }
+}
