@@ -642,9 +642,6 @@ summary::-webkit-details-marker {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  .featured__product-none {
-    display: none;
-  }
   .featured__catalog {
     padding-bottom: 63px;
   }
@@ -1331,6 +1328,9 @@ path {
     margin-bottom: 32px;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+  .featured__product-none {
+    display: none;
   }
   .browse {
     margin-bottom: 64px;
