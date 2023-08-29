@@ -24,6 +24,14 @@
 .header__icon:hover path {
   fill: #F16D7F;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__left {
+    padding-left: 16px;
+  }
+  .header__right {
+    padding-right: 26px;
+  }
+}
 
 #burger {
   position: absolute;
@@ -80,14 +88,6 @@
 }
 .side__menu__item:hover {
   color: #F16D7F;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .side__menu__left {
-    padding-left: 16px;
-  }
-  .side__menu__right {
-    padding-right: 16px;
-  }
 }
 
 .info {

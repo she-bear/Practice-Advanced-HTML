@@ -26,6 +26,18 @@
     &__icon:hover path {
         fill: $mainSelectColor;
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        & {
+            &__left {
+                padding-left: 16px;
+            }
+
+            &__right {
+                padding-right: 26px;
+            }
+        }
+    }
 }
 
 // спрятать за экран
@@ -84,17 +96,5 @@
 
     &__item:hover {
         color: #F16D7F;
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        & {
-            &__left {
-                padding-left: 16px;
-            }
-
-            &__right {
-                padding-right: 16px;
-            }
-        }
     }
 }
