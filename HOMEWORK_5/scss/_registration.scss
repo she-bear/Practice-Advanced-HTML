@@ -108,3 +108,24 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .registration {
+        gap: 22px;
+        padding-top: 40px;
+
+        &__right,
+        &__right h3 {
+            font-size: 16px;
+        }
+
+        &__header {
+            margin-bottom: 10px;
+        }
+
+        &__ul {
+            list-style-position: outside;
+            margin-left: 22px;
+        }
+    }
+}

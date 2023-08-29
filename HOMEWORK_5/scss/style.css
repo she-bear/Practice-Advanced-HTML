@@ -1005,6 +1005,22 @@ summary::-webkit-details-marker {
   left: 24px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .registration {
+    gap: 22px;
+    padding-top: 40px;
+  }
+  .registration__right, .registration__right h3 {
+    font-size: 16px;
+  }
+  .registration__header {
+    margin-bottom: 10px;
+  }
+  .registration__ul {
+    list-style-position: outside;
+    margin-left: 22px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
