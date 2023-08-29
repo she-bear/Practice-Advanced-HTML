@@ -742,6 +742,7 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
   background-color: #FFF;
+  margin-top: 22px;
   transition: all 0.3s;
 }
 .cart__actions__button:hover {
@@ -847,7 +848,7 @@ summary::-webkit-details-marker {
 }
 .cart__total__button {
   border-color: #F16D7F;
-  padding: 16px 42px;
+  padding: 16px 40px;
   border-style: solid;
   border-width: 1px;
   color: #FFFFFF;
@@ -864,6 +865,25 @@ summary::-webkit-details-marker {
   background-color: #FFF;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 60px;
+  }
+  .cart__actions {
+    justify-content: center;
+    gap: 48px;
+  }
+  .cart__right {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .cart__checkout {
+    margin-top: 56px;
+  }
+}
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
