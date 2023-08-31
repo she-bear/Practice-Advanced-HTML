@@ -90,6 +90,7 @@
             border-style: solid;
             border-width: 1px;
             @include font(#4A4A4A, 14px, 300);
+            text-transform: uppercase;
             background-color: #FFF;
             margin-top: 22px;
             transition: all 0.3s;
@@ -136,6 +137,7 @@
             @include font (#4A4A4A, 11px, 300);
             background-color: #FFF;
             transition: all 0.3s;
+            text-transform: uppercase;
 
             &:hover {
                 color: #FFF;
@@ -204,6 +206,10 @@
     }
 }
 
+.text__par {
+    @include font(#6F6E6E, 22px, 400);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .cart {
         display: flex;
@@ -224,5 +230,88 @@
         &__checkout {
             margin-top: 56px;
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cart {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 39px;
+        padding-bottom: 96px;
+
+        &__left {
+            gap: 32px;
+        }
+
+        &__item {
+            height: 188px;
+            gap: 17px;
+
+            &__header {
+                font-size: 16px;
+                width: auto;
+            }
+
+            &__field {
+                font-size: 14px;
+            }
+
+            &__quantity {
+                gap: 15px;
+            }
+
+            &__content {
+                padding-top: 13px;
+                gap: 25px;
+                padding-right: 12px;
+            }
+
+            &__title {
+                gap: 31px;
+            }
+
+            &__fields {
+                gap: 4px;
+            }
+
+            &__count {
+                width: 24px;
+                font-size: 10px;
+                padding-right: 1px;
+                padding-left: 9px;
+            }
+
+            &__svg {
+                transform: scale(0.8);
+            }
+        }
+
+        &__actions {
+            gap: 9px;
+        }
+
+        &__actions__button {
+            @include font(#575757, 12px, 400);
+            text-transform: none;
+            padding: 9px 18px;
+            width: 175px;
+        }
+
+        &__right {
+            gap: 48px;
+        }
+
+        &__address__button {
+            text-transform: none;
+        }
+
+        &__total__button {
+            padding: 16px 36px;
+        }
+    }
+
+    .text__par {
+        font-size: 14px;
     }
 }

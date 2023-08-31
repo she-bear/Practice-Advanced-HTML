@@ -838,6 +838,7 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-transform: uppercase;
   background-color: #FFF;
   margin-top: 22px;
   transition: all 0.3s;
@@ -896,6 +897,7 @@ summary::-webkit-details-marker {
   line-height: normal;
   background-color: #FFF;
   transition: all 0.3s;
+  text-transform: uppercase;
 }
 .cart__address__button:hover {
   color: #FFF;
@@ -962,6 +964,14 @@ summary::-webkit-details-marker {
   background-color: #FFF;
 }
 
+.text__par {
+  color: #6F6E6E;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .cart {
     display: flex;
@@ -979,6 +989,76 @@ summary::-webkit-details-marker {
   }
   .cart__checkout {
     margin-top: 56px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .cart {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
+  .cart__left {
+    gap: 32px;
+  }
+  .cart__item {
+    height: 188px;
+    gap: 17px;
+  }
+  .cart__item__header {
+    font-size: 16px;
+    width: auto;
+  }
+  .cart__item__field {
+    font-size: 14px;
+  }
+  .cart__item__quantity {
+    gap: 15px;
+  }
+  .cart__item__content {
+    padding-top: 13px;
+    gap: 25px;
+    padding-right: 12px;
+  }
+  .cart__item__title {
+    gap: 31px;
+  }
+  .cart__item__fields {
+    gap: 4px;
+  }
+  .cart__item__count {
+    width: 24px;
+    font-size: 10px;
+    padding-right: 1px;
+    padding-left: 9px;
+  }
+  .cart__item__svg {
+    transform: scale(0.8);
+  }
+  .cart__actions {
+    gap: 9px;
+  }
+  .cart__actions__button {
+    color: #575757;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+    padding: 9px 18px;
+    width: 175px;
+  }
+  .cart__right {
+    gap: 48px;
+  }
+  .cart__address__button {
+    text-transform: none;
+  }
+  .cart__total__button {
+    padding: 16px 36px;
+  }
+  .text__par {
+    font-size: 14px;
   }
 }
 .registration {
@@ -1188,14 +1268,6 @@ path {
 
 .text__oc {
   color: #F16D7F;
-}
-
-.text__par {
-  color: #6F6E6E;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .specity {
