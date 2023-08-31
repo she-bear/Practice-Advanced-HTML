@@ -278,12 +278,14 @@ path {
         }
     }
 
-    .featured__content {
-        display: flex;
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        gap: 16px;
-        margin: 64px 8px 40px 8px;
+    .featured {
+        &__content {
+            display: flex;
+            grid-template-columns: 1fr;
+            flex-direction: column;
+            gap: 16px;
+            margin: 64px 8px 40px 8px;
+        }
 
         &__item,
         &__img {

@@ -1301,7 +1301,7 @@ path {
     gap: 16px;
     margin: 64px 8px 40px 8px;
   }
-  .featured__content__item, .featured__content__img {
+  .featured__item, .featured__img {
     width: 100%;
   }
   .info {
