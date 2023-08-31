@@ -56,7 +56,6 @@
         margin-bottom: 12px;
     }
 
-
     &__title {
         @include font(#4D4D4D, 18px, 300);
         margin-bottom: 48px;
@@ -78,6 +77,10 @@
         margin-bottom: 65px;
     }
 
+    &__long__div-mob {
+        display: none;
+    }
+
     &__choose {
         display: flex;
         align-items: center;
@@ -89,6 +92,10 @@
         display: flex;
         align-items: center;
         gap: 9px;
+    }
+
+    &__text__item {
+        @include font(#6F6E6E, 14px, 400);
     }
 
     &__basket__button {
@@ -196,5 +203,55 @@
 
     &__item__price {
         @include font($mainSelectColor, 16px, 400);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .product__info {
+        &.center {
+            padding: 85px 0 0 0;
+        }
+
+        &__img {
+            width: 100vw;
+        }
+
+        &__content {
+            position: static;
+            margin-top: 85px;
+        }
+
+        &__subtitle {
+            margin-bottom: 12px;
+        }
+
+        &__title {
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            max-width: 326px;
+        }
+
+        &__price {
+            margin-bottom: 32px;
+        }
+
+        &__long__div {
+            display: none;
+        }
+
+        &__long__div-mob {
+            display: block;
+            margin-bottom: 65px;
+        }
+
+        &__text__item {
+            font-size: 10px;
+        }
+
+        &__choose {
+            margin-bottom: 64px;
+        }
     }
 }
