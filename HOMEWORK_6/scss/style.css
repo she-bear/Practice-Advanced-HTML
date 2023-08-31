@@ -682,6 +682,13 @@ summary::-webkit-details-marker {
   .sort__heading {
     font-size: 12px;
   }
+  .featured__product__content {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .featured__catalog {
+    padding-bottom: 64px;
+  }
 }
 .cart {
   padding-top: 96px;

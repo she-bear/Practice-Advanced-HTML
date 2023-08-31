@@ -218,4 +218,16 @@ summary::-webkit-details-marker {
             font-size: 12px;
         }
     }
+
+
+    .featured {
+        &__product__content {
+            grid-template-columns: 1fr;
+            margin-bottom: 40px;
+        }
+
+        &__catalog {
+            padding-bottom: 64px;
+        }
+    }
 }
