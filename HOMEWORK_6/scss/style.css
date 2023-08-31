@@ -527,6 +527,9 @@ summary::-webkit-details-marker {
 .filter__heading:hover {
   cursor: pointer;
 }
+.filter__svg {
+  display: none;
+}
 .filter__item {
   margin-top: 16px;
 }
@@ -652,6 +655,32 @@ summary::-webkit-details-marker {
     gap: 32px;
     padding-top: 24px;
     padding-bottom: 46px;
+  }
+  .filter {
+    width: 100px;
+  }
+  .filter__heading-none {
+    display: none;
+  }
+  .filter__svg {
+    display: flex;
+    align-items: center;
+  }
+  .filter__summary {
+    padding: 0;
+  }
+  .filter__content {
+    width: 250px;
+  }
+  .filter__sort {
+    gap: 0;
+  }
+  .sort {
+    gap: 20px;
+    align-items: center;
+  }
+  .sort__heading {
+    font-size: 12px;
   }
 }
 .cart {

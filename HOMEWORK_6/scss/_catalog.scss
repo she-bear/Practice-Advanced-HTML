@@ -55,6 +55,10 @@ summary::-webkit-details-marker {
         }
     }
 
+    &__svg {
+        display: none;
+    }
+
     &__item {
         margin-top: 16px;
     }
@@ -179,5 +183,39 @@ summary::-webkit-details-marker {
         gap: 32px;
         padding-top: 24px;
         padding-bottom: 46px;
+    }
+
+    .filter {
+        width: 100px;
+
+        &__heading-none {
+            display: none;
+        }
+
+        &__svg {
+            display: flex;
+            align-items: center;
+        }
+
+        &__summary {
+            padding: 0;
+        }
+
+        &__content {
+            width: 250px;
+        }
+
+        &__sort {
+            gap: 0;
+        }
+    }
+
+    .sort {
+        gap: 20px;
+        align-items: center;
+
+        &__heading {
+            font-size: 12px;
+        }
     }
 }
