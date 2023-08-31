@@ -519,6 +519,12 @@
   .product__info__choose {
     margin-bottom: 64px;
   }
+  .featured__product {
+    padding-top: 64px;
+  }
+  .featured__product-none {
+    display: none;
+  }
 }
 summary {
   display: block;
