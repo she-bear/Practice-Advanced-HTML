@@ -172,3 +172,12 @@ summary::-webkit-details-marker {
         padding-bottom: 63px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navigation {
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+}
