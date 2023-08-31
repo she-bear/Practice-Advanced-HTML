@@ -1118,6 +1118,20 @@ summary::-webkit-details-marker {
     margin-left: 22px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .registration {
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .registration__right, .registration__right h3 {
+    font-size: 16px;
+  }
+  .registration__ul {
+    list-style-position: outside;
+    margin-left: 22px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
