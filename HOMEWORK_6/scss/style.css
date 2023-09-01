@@ -18,9 +18,6 @@
   align-items: center;
   gap: 33px;
 }
-.header__rightMobile {
-  display: none;
-}
 .header__icon:hover path {
   fill: #F16D7F;
 }
@@ -30,6 +27,17 @@
   }
   .header__right {
     padding-right: 26px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header__icon-none {
+    display: none;
+  }
+  .header__right {
+    gap: 0;
   }
 }
 
@@ -1435,16 +1443,6 @@ path {
   .center {
     padding-left: calc(50% - 179px);
     padding-right: calc(50% - 179px);
-  }
-  .header {
-    padding: 0 16px;
-  }
-  .header__right {
-    display: none;
-  }
-  .header__rightMobile {
-    display: flex;
-    align-items: center;
   }
   .top {
     display: flex;

@@ -19,10 +19,6 @@
         gap: 33px;
     }
 
-    &__rightMobile {
-        display: none;
-    }
-
     &__icon:hover path {
         fill: $mainSelectColor;
     }
@@ -35,6 +31,20 @@
 
             &__right {
                 padding-right: 26px;
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        & {
+            padding: 0 16px;
+
+            &__icon-none {
+                display: none;
+            }
+
+            &__right {
+                gap: 0;
             }
         }
     }
