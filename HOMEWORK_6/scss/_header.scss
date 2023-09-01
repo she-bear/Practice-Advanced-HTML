@@ -19,10 +19,6 @@
         gap: 33px;
     }
 
-    &__rightMobile {
-        display: none;
-    }
-
     &__icon:hover path {
         fill: $mainSelectColor;
     }
@@ -43,13 +39,12 @@
         & {
             padding: 0 16px;
 
-            &__right {
+            &__icon-none {
                 display: none;
             }
 
-            &__rightMobile {
-                display: flex;
-                align-items: center;
+            &__right {
+                gap: 0;
             }
         }
     }

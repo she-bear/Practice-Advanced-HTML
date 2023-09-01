@@ -1,0 +1,79 @@
+.subscribe {
+    background-image: url(../img/subscribe_bg.png);
+    background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    text-align: center;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__text {
+        max-width: 360px;
+        text-align: center;
+        @include font($mainDarkColor, 20px, 400);
+    }
+
+    &__italic {
+        font-style: italic;
+    }
+
+    &__title {
+        text-align: center;
+        @include font($mainDarkColor, 24px, 700, 167.2%);
+    }
+
+    &__subtitle {
+        @include font($mainDarkColor, 18px, 400, 167.2%);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__input {
+        width: 250px;
+        height: 49px;
+        background-color: #E1E1E1;
+        border: none;
+        border-radius: 25px 0 0 25px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    &__input:focus {
+        background-color: #FFFFFF;
+    }
+
+    &__button {
+        width: 100px;
+        height: 49px;
+        background-color: #E05C6E;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        @include font(#FFF, 14px, 400);
+        transition: transform 0.3s;
+    }
+
+    &__button:hover {
+        transform: scale(1.05)
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        & {
+            background-image: url(../img/subscribe_bg_laptop.png);
+            grid-template-columns: 1fr;
+            gap: 48px;
+            padding-top: 64px;
+            padding-bottom: 140px;
+        }
+    }
+}

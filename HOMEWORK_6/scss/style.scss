@@ -63,10 +63,6 @@ path {
     color: $mainSelectColor;
 }
 
-.text__par {
-    @include font(#6F6E6E, 22px, 400);
-}
-
 .specity {
     padding-top: 65px;
     padding-bottom: 96px;
@@ -267,12 +263,14 @@ path {
         }
     }
 
-    .featured__content {
-        display: flex;
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        gap: 16px;
-        margin: 64px 8px 40px 8px;
+    .featured {
+        &__content {
+            display: flex;
+            grid-template-columns: 1fr;
+            flex-direction: column;
+            gap: 16px;
+            margin: 64px 8px 40px 8px;
+        }
 
         &__item,
         &__img {

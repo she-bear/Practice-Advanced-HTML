@@ -1,0 +1,265 @@
+.navigation {
+    background-color: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        @include font($mainSelectColor, 24px, 400);
+    }
+
+    &__link {
+        @include font(#636363, 14px, 300);
+    }
+
+    &__link:not(:last-child)::after {
+        content: "/";
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    &__link:last-child {
+        color: $mainSelectColor;
+        font-weight: 700;
+    }
+}
+
+.product__info {
+    background-color: #F7F7F7;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    text-align: center;
+    position: relative;
+
+    &__content {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        border: 1px solid #EAEAEA;
+        background-color: #fff;
+        position: absolute;
+        top: 712px;
+        left: calc(50% - 570px);
+        right: calc(50% - 570px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__subtitle {
+        @include font($mainSelectColor, 14px, 300);
+        margin-bottom: 27px;
+    }
+
+    &__small__div {
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        @include font(#4D4D4D, 18px, 300);
+        margin-bottom: 48px;
+    }
+
+    &__text {
+        @include font(#5E5E5E, 14px, 300);
+        text-align: center;
+        margin-bottom: 32px;
+        width: 555px;
+    }
+
+    &__price {
+        @include font($mainSelectColor, 24px, 300);
+        margin-bottom: 65px;
+    }
+
+    &__long__div {
+        margin-bottom: 65px;
+    }
+
+    &__long__div-mob {
+        display: none;
+    }
+
+    &__choose {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin-bottom: 48px;
+    }
+
+    &__choose__item {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    &__text__item {
+        @include font(#6F6E6E, 14px, 400);
+    }
+
+    &__basket__button {
+        border-color: $buttonColor;
+        padding: 15px 39px;
+        border-style: solid;
+        border-width: 1px;
+        @include font($buttonColor, 16px, 400);
+        background-color: #FFF;
+        transition: all 0.3s;
+
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__basket__button:hover {
+        color: #FFF;
+        background-color: $buttonColor;
+    }
+
+    &__basket__button:hover path {
+        fill: #FFF;
+    }
+}
+
+
+
+.featured__product {
+    padding-top: 712px;
+    padding-bottom: 128px;
+
+    &__title {
+        @include font($mainDarkColor, 30px, 400);
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        @include font(#9F9F9F, 14px, 400);
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        background: #F8F8F8;
+        position: relative;
+    }
+
+    &__img {
+        transition: all 0.4s;
+    }
+
+    &__item:hover &__img {
+        filter: brightness(0.5);
+    }
+
+    &__item:hover &__add {
+        display: flex;
+    }
+
+    &__item__content {
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__add {
+        position: absolute;
+        top: 188px;
+        left: 111px;
+        border: 1px solid #fff;
+        width: 139px;
+        height: 44px;
+        @include font(#FFFFFF, 14px, 400, 17px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+
+    &__add:hover {
+        box-shadow: 0 0 5px #fff;
+    }
+
+    &__add:hover svg path {
+        fill: $mainSelectColor;
+    }
+
+    &__item__title {
+        @include font(#000, 13px, 400);
+    }
+
+    &__item__text {
+        @include font(#5D5D5D, 14px, 300);
+    }
+
+    &__item__price {
+        @include font($mainSelectColor, 16px, 400);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .product__info {
+        &.center {
+            padding: 85px 0 0 0;
+        }
+
+        &__img {
+            width: 100vw;
+        }
+
+        &__content {
+            position: static;
+            margin-top: 85px;
+        }
+
+        &__subtitle {
+            margin-bottom: 12px;
+        }
+
+        &__title {
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            max-width: 326px;
+        }
+
+        &__price {
+            margin-bottom: 32px;
+        }
+
+        &__long__div {
+            display: none;
+        }
+
+        &__long__div-mob {
+            display: block;
+            margin-bottom: 65px;
+        }
+
+        &__text__item {
+            font-size: 10px;
+        }
+
+        &__choose {
+            margin-bottom: 64px;
+        }
+    }
+
+    .featured__product {
+        padding-top: 64px;
+    }
+
+    .featured__product-none {
+        display: none;
+    }
+}
